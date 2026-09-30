@@ -1,2 +1,1 @@
-"# resumeQR" 
-"# QRresume" 
+"# QR" 
