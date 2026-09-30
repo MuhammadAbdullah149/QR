@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color-background-start: #e8f2f2;
+            --color-background-middle: #dcebf0;
+            --color-background-end: #f2e8dc;
+            --color-ink: #18343b;
+            --color-muted: #49636a;
+            --color-teal: #087f8c;
+            --color-coral: #b94d3b;
+            --color-glass: rgba(255, 255, 255, 0.5);
+            --color-glass-hover: rgba(255, 255, 255, 0.76);
+            --color-glass-border: rgba(255, 255, 255, 0.82);
+            --color-shadow: rgba(34, 67, 75, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            min-height: 100%;
+            background: linear-gradient(135deg, var(--color-background-start) 0%, var(--color-background-middle) 52%, var(--color-background-end) 100%);
+        }
+
+        body {
+            width: calc(100% - 2rem);
+            max-width: 64rem;
+            margin: 0 auto;
+            padding: clamp(1rem, 4vw, 3rem) 0;
+            font-family: system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--color-ink);
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            overflow-wrap: anywhere;
+        }
+
+        h2 {
+            font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+        }
+
+        h3 {
+            color: var(--color-muted);
+        }
+
+        ol {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+            gap: 0.75rem;
+            padding-left: 2rem;
+        }
+
+        li {
+            min-height: 44px;
+            padding: 0.65rem 0.9rem;
+            overflow-wrap: anywhere;
+            background: var(--color-glass);
+            border: 1px solid var(--color-glass-border);
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 24px var(--color-shadow);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        a {
+            color: var(--color-teal);
+            text-underline-offset: 0.2em;
+        }
+
+        a:hover {
+            color: var(--color-coral);
+        }
+
+        li a {
+            display: flex;
+            min-height: 44px;
+            align-items: center;
+        }
+
+        li:hover {
+            background: var(--color-glass-hover);
+        }
+
+        a:focus-visible {
+            outline: 2px solid currentColor;
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 42rem) {
+            ol {
+                grid-template-columns: 1fr;
+                padding-left: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Hello EVERYONE 👋</h2>
+    <h1>I Am Muhammad Abdullah sajjad Here</h1>
+    <a href="https://mabdullah-beta.vercel.app/">My Potfolio</a>
+    <h2>My projects links are given below:</h2>
+    <h3>Production grade</h3>
+    <ol>
+        <li><a href="https://blog-three-jade-57.vercel.app/">Anonymous Blog | Fullstack</a></li>
+        <li><a href="https://fish-farm-nu.vercel.app/">Fish farm calculator | Farm Feed Calculator</a></li>
+        <li><a href="https://alaska-web-livid.vercel.app/">Alaska | Hotel potfolio</a></li>
+    </ol>
+    <h3>potfolio</h3>
+    <ol>
+        <li><a href="https://bilal-raza.vercel.app/">Bilal RAZA | graphic designer</a></li>
+        <li><a href="https://iamalisajjad.vercel.app/">Ali SAJJAD | CA auditor</a></li>
+        <li><a href="https://mabdullah-beta.vercel.app/">Abdullah SAJJAD | SoftwareEngineer</a></li>
+    </ol>
+    <h3>Learning projects</h3>
+    <ol>
+        <li><a href="https://muhammadabdullah149.github.io/E-commerce/">E-commerce Website</a></li>
+        <li><a href="https://muhammadabdullah149.github.io/ToDo-List/">To-Do List App</a></li>
+        <li><a href="https://muhammadabdullah149.github.io/Merit-Calculator/">Merit Calculator</a></li>
+        <li><a href="https://muhammadabdullah149.github.io/P4-Weather/">Weather App</a></li>
+        <li><a href="https://muhammadabdullah149.github.io/P7-Quiz-App/">Quiz App</a></li>
+    </ol>
+    
+    
+
+</body>
+</html>
